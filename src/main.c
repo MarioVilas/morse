@@ -1,5 +1,7 @@
 // Copyright 2016 Mitchell Kember. Subject to the MIT License.
 
+#define _POSIX_C_SOURCE 200809L
+
 #include "translate.h"
 #include "transmit.h"
 #include "util.h"
@@ -18,8 +20,6 @@ int main(int argc, char **argv) {
 
 	// Get command line options.
 	int c;
-	extern char *optarg;
-	extern int optind, optopt;
 	while ((c = getopt(argc, argv, "hedt")) != -1) {
 		switch (c) {
 		case 'h':

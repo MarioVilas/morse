@@ -154,4 +154,6 @@ enum ListenerState get_listener_state(long time_now) {
 		mode = IDLE;
 		return LS_UP;
 	}
+	// This should never be reached, but satisfies the compiler
+	return LS_NONE;
 }
