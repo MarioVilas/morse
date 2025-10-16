@@ -1,5 +1,7 @@
 // Copyright 2016 Mitchell Kember. Subject to the MIT License.
 
+#define _DEFAULT_SOURCE
+
 #include "transmit.h"
 
 #include "circle.h"
